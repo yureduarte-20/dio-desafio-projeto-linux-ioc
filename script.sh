@@ -22,9 +22,9 @@ useradd amanda -c "Amanda" -m -p $(openssl passwd -crypt Senha123) -g GPR_SEC
 useradd rogerio -c "Rogerio" -m -p $(openssl passwd -crypt Senha123) -g GPR_SEC
 
 echo "mudando dono das pastas"
-chown root:GPR_ADM /adm -r
-chown root:GPR_VEN /ven -r
-chown root:GPR_SEC /sec -r
+chown root:GPR_ADM /adm 
+chown root:GPR_VEN /ven 
+chown root:GPR_SEC /sec 
 
 echo "mudando permissão das pastas"
 chmod 770 /adm
